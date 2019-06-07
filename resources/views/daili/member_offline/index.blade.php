@@ -13,15 +13,41 @@
                      <tr>
                          <th style="width: 10%">ID</th>
                          <th>{{__('words.user_name')}}</th>
-                         <th  style="width: 10%">{{__('words.central_account')}}</th>
-                         <th  style="width: 10%">{{__('words.actual_name')}}</th>
-                         <th  style="width: 10%">{{__('words.affiliated_agent')}}</th>
-                         <th  style="width: 10%">{{__('words.mobile_email')}}</th>
-                         <th  style="width: 15%">{{__('words.registration_time')}}</th>
-                         <th  style="width: 10%">{{__('words.status')}}</th>
-                         <th  style="width: 15%">{{__('words.operating')}}</th>
+                         <th style="width: 10%">{{__('words.central_account')}}</th>                       
+                         <td>Personal Deposit</td>
+                         <td>Team Deposit</td>
+                         <th style="width: 10%">{{__('words.actual_name')}}</th>  
+                         <th style="width: 10%">{{__('words.affiliated_agent')}}</th>
+                         <th style="width: 10%">{{__('words.mobile_email')}}</th>
+                         <th style="width: 15%">{{__('words.registration_time')}}</th>
+                         <th style="width: 10%">{{__('words.status')}}</th>
+                         <th style="width: 15%">{{__('words.operating')}}</th>
                      </tr>
                      @foreach($data as $item)
+                        @php
+                            $m_list = $item->under_members()->pluck('id');
+                            $recharge_mod = new \App\Models\Recharge();
+                            $drawing_mod = new \App\Models\Drawing();
+                            $dividend_mod = new \App\Models\Dividend();
+                            
+                            if ($start_at)
+                            {
+                                $recharge_mod = $recharge_mod->where('confirm_at', '>=', $start_at);
+                                $drawing_mod = $drawing_mod->where('confirm_at', '>=', $start_at);
+                            }
+                            if ($end_at)
+                            {
+                                $recharge_mod = $recharge_mod->where('confirm_at', '<=', $end_at);
+                                $drawing_mod = $drawing_mod->where('confirm_at', '<=', $end_at);
+                            }
+
+                            $team_recharge_money = $recharge_mod->whereIn('member_id', $m_list)->where('status', 2)->sum('money');
+                            $team_drawing_money = $drawing_mod->whereIn('member_id', $m_list)->where('status', 2)->sum('money');
+
+                            $personal_recharge_money = \App\Models\Recharge::where('confirm_at', '>=', $start_at)->where('confirm_at', '<=', $end_at)->where('member_id', $item->id)->where('status', 2)->sum('money');
+                            $personal_drawing_money = \App\Models\Drawing::where('confirm_at', '>=', $start_at)->where('confirm_at', '<=', $end_at)->where('member_id', $item->id)->where('status', 2)->sum('money');
+
+                        @endphp
                          <tr>
                              <td>
                                  {{ $item->id }}
@@ -34,7 +60,13 @@
                                 @endif
                              </td>
                              <td>
-                                 {{ $item->money }}
+                                {{ $item->money }}
+                             </td>
+                             <td>
+                                {{ $personal_recharge_money }}
+                             </td>
+                             <td>
+                                {{ $team_recharge_money }}
                              </td>
                              <td>
                                  {{ $item->real_name }}
