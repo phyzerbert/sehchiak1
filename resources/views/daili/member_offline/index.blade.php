@@ -28,18 +28,7 @@
                             $m_list = $item->under_members()->pluck('id');
                             $recharge_mod = new \App\Models\Recharge();
                             $drawing_mod = new \App\Models\Drawing();
-                            $dividend_mod = new \App\Models\Dividend();
-                            
-                            if ($start_at)
-                            {
-                                $recharge_mod = $recharge_mod->where('confirm_at', '>=', $start_at);
-                                $drawing_mod = $drawing_mod->where('confirm_at', '>=', $start_at);
-                            }
-                            if ($end_at)
-                            {
-                                $recharge_mod = $recharge_mod->where('confirm_at', '<=', $end_at);
-                                $drawing_mod = $drawing_mod->where('confirm_at', '<=', $end_at);
-                            }
+                            $dividend_mod = new \App\Models\Dividend();                    
 
                             $team_recharge_money = $recharge_mod->whereIn('member_id', $m_list)->where('status', 2)->sum('money');
                             $team_drawing_money = $drawing_mod->whereIn('member_id', $m_list)->where('status', 2)->sum('money');
