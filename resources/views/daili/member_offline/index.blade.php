@@ -33,8 +33,8 @@
                             $team_recharge_money = $recharge_mod->whereIn('member_id', $m_list)->where('status', 2)->sum('money');
                             $team_drawing_money = $drawing_mod->whereIn('member_id', $m_list)->where('status', 2)->sum('money');
 
-                            $personal_recharge_money = \App\Models\Recharge::where('confirm_at', '>=', $start_at)->where('confirm_at', '<=', $end_at)->where('member_id', $item->id)->where('status', 2)->sum('money');
-                            $personal_drawing_money = \App\Models\Drawing::where('confirm_at', '>=', $start_at)->where('confirm_at', '<=', $end_at)->where('member_id', $item->id)->where('status', 2)->sum('money');
+                            $personal_recharge_money = \App\Models\Recharge::where('member_id', $item->id)->where('status', 2)->sum('money');
+                            $personal_drawing_money = \App\Models\Drawing::where('member_id', $item->id)->where('status', 2)->sum('money');
 
                         @endphp
                          <tr>
