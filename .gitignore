@@ -2,6 +2,7 @@
 /public
 /storage
 /database
+/routes
 /vendor
 .env
 .phpunit.result.cache
