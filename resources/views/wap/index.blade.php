@@ -1058,11 +1058,11 @@
         <a href="" style="display: block;width:65%;position:absolute;top:0;left:0"
             @if($_member) onclick="javascript:window.open('{{ route('ballcrown.index', 'SP3') }}','','width=1200,height=700')"
             @else onclick="location.href = '{{ route('wap.login') }}'" @endif
-        ><img src="{{ asset('/wap/images/sportevents/ibc.png') }}" height="140px" alt=""></a>
+        ><img src="{{ asset('/wap/images/sportevents/ibc.png') }}" height="140px" width="100%" alt=""></a>
         <a href="" style="display: block;width:65%;position: absolute;top:0;right:0"
             @if($_member) onclick="javascript:window.open('{{ route('ballcrown.index', 'SP2') }}','','width=1200,height=700')"
             @else onclick="location.href = '{{ route('wap.login') }}'" @endif
-        ><img src="{{ asset('/wap/images/sportevents/sbo.png') }}" height="140px" alt=""></a>        
+        ><img src="{{ asset('/wap/images/sportevents/sbo.png') }}" height="140px" width="100%" alt=""></a>        
     </div> 
 </div>
 <script>
