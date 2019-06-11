@@ -1001,25 +1001,12 @@
             @if(in_array('BC', $_api_list))
             <div class="m_box m_box-half">
                 <a class="m_box-link"
-                @if($_member) onclick="javascript:window.open('{{ route('ballcrown.index', 'SP3') }}','','width=1200,height=700')"
-                @else onclick="location.href = '{{ route('wap.login') }}'" @endif
+                    @if($_member) onclick="javascript:$('#sportsModal').modal()"
+                    @else onclick="location.href = '{{ route('wap.login') }}'" @endif
                 >
                 <img src="{{ asset('/wap/images/sportevents/ballcrown.png') }}" alt="">
                 <span class="m_box-name_new">
-                    IBC
-                </span>
-            </a>
-            </div>
-            @endif
-            @if(in_array('BC', $_api_list))
-            <div class="m_box m_box-half">
-                <a class="m_box-link"
-                @if($_member) onclick="javascript:window.open('{{ route('ballcrown.index', 'SP2') }}','','width=1200,height=700')"
-                @else onclick="location.href = '{{ route('wap.login') }}'" @endif
-                >
-                <img src="{{ asset('/wap/images/sportevents/sport4.png') }}" alt="">
-                <span class="m_box-name_new">
-                    SBO
+                    SPORTS
                 </span>
             </a>
             </div>
@@ -1065,6 +1052,18 @@
             <!--End of Tawk.to Script-->
         </div>
     </div>
+</div>
+<div class="modal modal-login modal-daili fade" id="sportsModal" role="dialog">
+    <div class="modal-content" style="width:85%;height:140px !important;padding:0;margin-top:150px;">
+        <a href="" style="display: block;width:65%;position:absolute;top:0;left:0"
+            @if($_member) onclick="javascript:window.open('{{ route('ballcrown.index', 'SP3') }}','','width=1200,height=700')"
+            @else onclick="location.href = '{{ route('wap.login') }}'" @endif
+        ><img src="{{ asset('/wap/images/sportevents/ibc.png') }}" height="140px" alt=""></a>
+        <a href="" style="display: block;width:65%;position: absolute;top:0;right:0"
+            @if($_member) onclick="javascript:window.open('{{ route('ballcrown.index', 'SP2') }}','','width=1200,height=700')"
+            @else onclick="location.href = '{{ route('wap.login') }}'" @endif
+        ><img src="{{ asset('/wap/images/sportevents/sbo.png') }}" height="140px" alt=""></a>        
+    </div> 
 </div>
 <script>
     var Marquee3k;
