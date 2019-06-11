@@ -80,18 +80,10 @@
                     @endif                    
                     @if(in_array('BC', $_api_list))
                     <li game-box="ss"
-                            @if($_member) onclick="javascript:window.open('{{ route('ballcrown.index', 'SP2') }}','','width=1200,height=720')"
+                            @if($_member) onclick="javascript:$('#sportsModal').modal()"
                             @else onclick="return layer.msg('{{__('ft.confirm_login')}}',{icon:6})" @endif
                         >
-                            <p>SBO Sports<span>SBO</span></p>
-                        </li>
-                    @endif
-                    @if(in_array('BC', $_api_list))
-                    <li game-box="saba"
-                            @if($_member) onclick="javascript:window.open('{{ route('ballcrown.index', 'SP3') }}','','width=1200,height=720')"
-                            @else onclick="return layer.msg('{{__('ft.confirm_login')}}',{icon:6})" @endif
-                        >
-                            <p>IBC Sports<span>IBC</span></p>
+                            <p>BC SPORTS<span>BC Sports</span></p>
                         </li>
                     @endif
                     {{--<li game-box="more" class="no-margin"></li>--}}
@@ -99,4 +91,18 @@
             </section>
         </div>
     </div>
+
+    <div class="modal" id="sportsModal" role="dialog">
+        <div class="modal-content" style="width:50%;height:250px !important;padding:0;">
+            <a href="" style="display: block;width:65%;position:absolute;top:0;left:0"
+                @if($_member) onclick="javascript:window.open('{{ route('ballcrown.index', 'SP3') }}','','width=1200,height=720')"
+                @else onclick="location.href = '{{ route('wap.login') }}'" @endif
+            ><img src="{{ asset('/wap/images/sportevents/ibc.png') }}" height="250px" width="100%" alt=""></a>
+            <a href="" style="display: block;width:65%;position: absolute;top:0;right:0"
+                @if($_member) onclick="javascript:window.open('{{ route('ballcrown.index', 'SP2') }}','','width=1200,height=720')"
+                @else onclick="location.href = '{{ route('wap.login') }}'" @endif
+            ><img src="{{ asset('/wap/images/sportevents/sbo.png') }}" height="250px" width="100%" alt=""></a>        
+        </div> 
+    </div>
+
 @endsection
