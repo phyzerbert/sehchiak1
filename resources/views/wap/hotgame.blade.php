@@ -9,19 +9,6 @@
     <div class="m_container" style="height:95vh">
         <div class="m_body">
             <div class="container-fluid gm_main">
-                {{--<div class="head">--}}
-                {{--<a class="f_l" href="#u_nav"><img src="{{ asset('/wap/images/user_menu.png') }}" alt=""></a>--}}
-                {{--<span>在线充值</span>--}}
-                {{--<a class="f_r" href="#type"><img src="{{ asset('/wap/images/user_game.png') }}" alt=""></a>--}}
-                {{--</div>--}}
-                {{--@include('wap.layouts.aside')--}}
-                {{--<div id="type" style="display: none">--}}
-                {{--<ul class="g_type">--}}
-                {{--<li>--}}
-                {{--@include('wap.layouts.aside_game_list')--}}
-                {{--</li>--}}
-                {{--</ul>--}}
-                {{--</div>--}}
                 <div class="m_member-title clear textCenter">
                     <a class="pull-left" href="javascript:history.go(-1);">&nbsp;{{ __('mb.Back') }}</a>
                    {{ __('mb.'.$type) }} 
@@ -51,50 +38,18 @@
                             </div>
                             <div class="btnContainer">
                                 <div class="input-group">
-
                                     <img src="{{asset('/web/images/poker/deposite_bt.png')}}"  onclick="deposit(1)">
-                                    <img src="{{asset('/web/images/poker/withdrawl_bt.png')}}" onclick="withdraw(1)">
-                            
+                                    <img src="{{asset('/web/images/poker/withdrawl_bt.png')}}" onclick="withdraw(1)">                            
                                 </div>
                             </div>
                         </div>
                         <div class = "inputClass_4">
-                            <img src="{{asset('/web/images/poker/android_bt.png')}}">
-                            <img src="{{asset('/web/images/poker/ios_bt.png')}}">
+                            <a href="http://www.918kiss.com.my/"><img src="{{asset('/web/images/poker/android_bt.png')}}" class="float-left"></a>
+                            <a href="http://www.918kiss.com.my/"><img src="{{asset('/web/images/poker/ios_bt.png')}}" class="float-right"></a>
                         </div>
                         
                     </form>
                 </div>
-                    <!-- <div id="input_container">
-                        <div class="input-group input_custom">
-                            <img class="place_img" src="{{asset('/web/images/poker/login.png')}}">
-                            <input type="text" placeholder="Login :" class="input_element" id="game_id1" value="{{$member->game_id1}}" readonly>
-                        </div>
-                        <br>
-                        <div class="input-group input_custom">
-                            <img class="place_img" src="{{asset('/web/images/poker/pass.png')}}">
-                            <input type="text" placeholder="Password :" class="input_element" id="game_pass1" value="{{$member->game_pass1}}" readonly>
-                        </div>
-                        <br>
-                        <div class="input-group input_balance">
-                            <img class="place_img" src="{{asset('/web/images/poker/balance.png')}}">
-                            <input type="text" placeholder="Balance :" id="balance1" class="balance" value="{{$member->game_balance1}}" readonly>
-
-                        </div>
-                        <div>
-                            <img src="{{asset('/web/images/poker/deposite_bt.png')}}" style="margin-left: 20px" onclick="deposit(1)">
-                            <img src="{{asset('/web/images/poker/withdrawl_bt.png')}}" style="margin-left: 10px" onclick="withdraw(1)">
-                        </div>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <div style="display: inline-flex">
-                            <img src="{{asset('/web/images/poker/android_bt.png')}}">
-                            <img src="{{asset('/web/images/poker/ios_bt.png')}}" style="margin-left: 40px">
-
-                        </div>
-                    </div> -->
                 @elseif($type == 'Newtown')
                 <div class = "col-12">
                     <form>
@@ -115,48 +70,18 @@
                             </div>
                             <div class="btnContainer">
                                 <div class="input-group">
-
                                     <img src="{{asset('/web/images/poker/deposite_bt.png')}}"  onclick="deposit(2)">
-                                    <img src="{{asset('/web/images/poker/withdrawl_bt.png')}}" onclick="withdraw(2)">
-                            
+                                    <img src="{{asset('/web/images/poker/withdrawl_bt.png')}}" onclick="withdraw(2)">                            
                                 </div>
                             </div>
                         </div>
                         <div class = "inputClass_4">
-                            <img src="{{asset('/web/images/poker/android_bt.png')}}">
-                            <img src="{{asset('/web/images/poker/ios_bt.png')}}">
+                            <a href="http://cdn.npro11.com/m.html"><img src="{{asset('/web/images/poker/android_bt.png')}}" class="float-left"></a>
+                            <a href="http://cdn.npro11.com/m.html"><img src="{{asset('/web/images/poker/ios_bt.png')}}" class="float-right"></a>
                         </div>
                         
                     </form>
                 </div>
-                    <!-- <div id="input_container">
-                        <div class="input-group input_custom">
-                            <img class="place_img" src="{{asset('/web/images/poker/login.png')}}">
-                            <input type="text" placeholder="Login :" class="input_element" id="game_id2" value="{{$member->game_id2}}" readonly>
-                        </div>
-                        <br>
-                        <div class="input-group input_custom">
-                            <img class="place_img" src="{{asset('/web/images/poker/pass.png')}}">
-                            <input type="text" placeholder="Password :" class="input_element" id="game_pass2" value="{{$member->game_pass2}}" readonly>
-                        </div>
-                        <br>
-                        <div class="input-group input_balance">
-                            <img class="place_img" src="{{asset('/web/images/poker/balance.png')}}">
-                            <input type="text" placeholder="Balance :" id="balance2" class="balance" value="{{$member->game_balance2}}" readonly>
-
-                            <img src="{{asset('/web/images/poker/deposite_bt.png')}}" style="margin-left: 20px" onclick="deposit(2)">
-                            <img src="{{asset('/web/images/poker/withdrawl_bt.png')}}" style="margin-left: 10px" onclick="withdraw(2)">
-                        </div>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <div style="display: inline-flex">
-                            <img src="{{asset('/web/images/poker/android_bt.png')}}">
-                            <img src="{{asset('/web/images/poker/ios_bt.png')}}" style="margin-left: 40px">
-
-                        </div>
-                    </div> -->
                 @elseif($type == 'Joker')
                 <div class = "col-12">
                     <form>
@@ -177,48 +102,18 @@
                             </div>
                             <div class="btnContainer">
                                 <div class="input-group">
-
                                     <img src="{{asset('/web/images/poker/deposite_bt.png')}}"  onclick="deposit(3)">
-                                    <img src="{{asset('/web/images/poker/withdrawl_bt.png')}}" onclick="withdraw(3)">
-                            
+                                    <img src="{{asset('/web/images/poker/withdrawl_bt.png')}}" onclick="withdraw(3)">                            
                                 </div>
                             </div>
                         </div>
                         <div class = "inputClass_4">
-                            <img src="{{asset('/web/images/poker/android_bt.png')}}">
-                            <img src="{{asset('/web/images/poker/ios_bt.png')}}">
+                            <a href="http://www.joker6688.com"><img src="{{asset('/web/images/poker/android_bt.png')}}" class="float-left"></a>
+                            <a href="http://www.joker6688.com"><img src="{{asset('/web/images/poker/ios_bt.png')}}" class="float-right"></a>
                         </div>
                         
                     </form>
                 </div>
-                    <!-- <div id="input_container" joker>
-                        <div class="input-group input_custom">
-                            <img class="place_img" src="{{asset('/web/images/poker/login.png')}}">
-                            <input type="text" placeholder="Login :" class="input_element" id="game_id3" value="{{$member->game_id3}}" readonly>
-                        </div>
-                        <br>
-                        <div class="input-group input_custom">
-                            <img class="place_img" src="{{asset('/web/images/poker/pass.png')}}">
-                            <input type="text" placeholder="Password :" class="input_element" id="game_pass3" value="{{$member->game_pass3}}" readonly>
-                        </div>
-                        <br>
-                        <div class="input-group input_balance">
-                            <img class="place_img" src="{{asset('/web/images/poker/balance.png')}}">
-                            <input type="text" placeholder="Balance :" id="balance3" class="balance" value="{{$member->game_balance3}}" readonly>
-
-                            <img src="{{asset('/web/images/poker/deposite_bt.png')}}" style="margin-left: 20px" onclick="deposit(3)">
-                            <img src="{{asset('/web/images/poker/withdrawl_bt.png')}}" style="margin-left: 10px" onclick="withdraw(3)">
-                        </div>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <div style="display: inline-flex">
-                            <img src="{{asset('/web/images/poker/android_bt.png')}}">
-                            <img src="{{asset('/web/images/poker/ios_bt.png')}}" style="margin-left: 40px">
-
-                        </div>
-                    </div> -->
                 @elseif($type == 'Mega888')
                 <div class = "col-12">
                     <form>
@@ -239,48 +134,18 @@
                             </div>
                             <div class="btnContainer">
                                 <div class="input-group">
-
                                     <img src="{{asset('/web/images/poker/deposite_bt.png')}}"  onclick="deposit(4)">
-                                    <img src="{{asset('/web/images/poker/withdrawl_bt.png')}}" onclick="withdraw(4)">
-                            
+                                    <img src="{{asset('/web/images/poker/withdrawl_bt.png')}}" onclick="withdraw(4)">                            
                                 </div>
                             </div>
                         </div>
                         <div class = "inputClass_4">
-                            <img src="{{asset('/web/images/poker/android_bt.png')}}">
-                            <img src="{{asset('/web/images/poker/ios_bt.png')}}">
+                            <a href="http://m.megaplay88.com/"><img src="{{asset('/web/images/poker/android_bt.png')}}" class="float-left"></a>
+                            <a href="http://m.megaplay88.com/"><img src="{{asset('/web/images/poker/ios_bt.png')}}" class="float-right"></a>
                         </div>
                         
                     </form>
                 </div>
-                <!-- <div id="input_container" mega888>
-                        <div class="input-group input_custom">
-                            <img class="place_img" src="{{asset('/web/images/poker/login.png')}}">
-                            <input type="text" placeholder="Login :" class="input_element" id="game_id4" value="{{$member->game_id4}}" readonly>
-                        </div>
-                        <br>
-                        <div class="input-group input_custom">
-                            <img class="place_img" src="{{asset('/web/images/poker/pass.png')}}">
-                            <input type="text" placeholder="Password :" class="input_element" id="game_pass4" value="{{$member->game_pass4}}" readonly>
-                        </div>
-                        <br>
-                        <div class="input-group input_balance">
-                            <img class="place_img" src="{{asset('/web/images/poker/balance.png')}}">
-                            <input type="text" placeholder="Balance :" id="balance4" class="balance" value="{{$member->game_balance4}}" readonly>
-
-                            <img src="{{asset('/web/images/poker/deposite_bt.png')}}" style="margin-left: 20px" onclick="deposit(4)">
-                            <img src="{{asset('/web/images/poker/withdrawl_bt.png')}}" style="margin-left: 10px" onclick="withdraw(4)">
-                        </div>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <div style="display: inline-flex">
-                            <img src="{{asset('/web/images/poker/android_bt.png')}}">
-                            <img src="{{asset('/web/images/poker/ios_bt.png')}}" style="margin-left: 40px">
-
-                        </div>
-                    </div> -->
                 @elseif($type == 'Rollex')
                     
                 <div class = "col-12">
@@ -302,59 +167,21 @@
                             </div>
                             <div class="btnContainer">
                                 <div class="input-group">
-
                                     <img src="{{asset('/web/images/poker/deposite_bt.png')}}"  onclick="deposit(5)">
-                                    <img src="{{asset('/web/images/poker/withdrawl_bt.png')}}" onclick="withdraw(5)">
-                            
+                                    <img src="{{asset('/web/images/poker/withdrawl_bt.png')}}" onclick="withdraw(5)">                            
                                 </div>
                             </div>
                         </div>
                         <div class = "inputClass_4">
-                            <img src="{{asset('/web/images/poker/android_bt.png')}}">
-                            <img src="{{asset('/web/images/poker/ios_bt.png')}}">
-                        </div>
-                        
+                            <a href="http://cdn.rpro11.com/m.html"><img src="{{asset('/web/images/poker/android_bt.png')}}" class="float-left"></a>
+                            <a href="http://cdn.rpro11.com/m.html"><img src="{{asset('/web/images/poker/ios_bt.png')}}" class="float-right"></a>
+                        </div>                        
                     </form>
                 </div>
 
                 @elseif($type == 'ace333')
                 <br />
                 <h1 style="color:white;text-align:center">Coming Soon</h1>
-                    
-                {{-- <div class = "col-12">
-                    <form>
-                        <div class="input-group">
-                            <span class="input-group-addon"><img style="max-width: 9999px;" src="{{asset('/web/images/poker/login.png')}}"></span>
-                            <input type="text" placeholder="Login :" class="form-control" id="game_id5" value="{{$member->game_id6}}" readonly>
-                        </div>
-                        <div class="input-group">
-                            <span class="input-group-addon"><img  style="max-width: 9999px;" src="{{asset('/web/images/poker/pass.png')}}"></span>
-                            <input type="text" placeholder="Password :" class="form-control" id="game_pass5" value="{{$member->game_pass6}}" readonly>
-                        </div>
-                        <div class = "inputClass_3" style="display: flex; align-items: center;">
-                            <div class="BalanceContainer">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><img  style="max-width: 9999px;" src="{{asset('/web/images/poker/balance.png')}}"></span>
-                                    <input type="text" placeholder="Balance :" id="balance5" class="form-control" value="{{$member->game_balance6}}" readonly>
-                                </div>
-                            </div>
-                            <div class="btnContainer">
-                                <div class="input-group">
-
-                                    <img src="{{asset('/web/images/poker/deposite_bt.png')}}"  onclick="deposit(6)">
-                                    <img src="{{asset('/web/images/poker/withdrawl_bt.png')}}" onclick="withdraw(6)">
-                            
-                                </div>
-                            </div>
-                        </div>
-                        <div class = "inputClass_4">
-                            <img src="{{asset('/web/images/poker/android_bt.png')}}">
-                            <img src="{{asset('/web/images/poker/ios_bt.png')}}">
-                        </div>
-                        
-                    </form>
-                </div> --}}
-
                 @endif
 
                 <div class="wrap">
