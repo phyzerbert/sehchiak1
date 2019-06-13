@@ -6,7 +6,7 @@
     <script src="{{ asset('/web/js/jquery.sweet-modal.min.js') }}"></script>
     <img src="{{asset('/wap/images/page-loader.gif')}}" style="display: none" id="loading_icon"></img>
     <input type="hidden" id="credit" value="{{$member->money}}">
-    <div class="m_container" style="height:110vh">
+    <div class="m_container">
         <div class="m_body">
             <div class="container-fluid gm_main">
                 <div class="m_member-title clear textCenter">
