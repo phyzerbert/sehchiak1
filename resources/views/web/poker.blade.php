@@ -51,8 +51,8 @@
                             </div>
                             
                             <div class="download-container">
-                                <a href="#"><img src="{{asset('/web/images/poker/android_bt.png')}}" class="float-left"></a>
-                                <a href="#"><img src="{{asset('/web/images/poker/ios_bt.png')}}" class="float-right"></a>
+                                <a href="http://www.918kiss.com.my/"><img src="{{asset('/web/images/poker/android_bt.png')}}" class="float-left"></a>
+                                <a href="http://www.918kiss.com.my/"><img src="{{asset('/web/images/poker/ios_bt.png')}}" class="float-right"></a>
                             </div>
                         </div>
                     </div>
@@ -80,8 +80,8 @@
                                 <img src="{{asset('/web/images/poker/withdrawl_bt.png')}}" onclick="withdraw(2)">
                             </div>
                             <div class="download-container">
-                                <a href="#"><img src="{{asset('/web/images/poker/android_bt.png')}}" class="float-left"></a>
-                                <a href="#"><img src="{{asset('/web/images/poker/ios_bt.png')}}" class="float-right"></a>
+                                <a href="http://cdn.npro11.com/m.html"><img src="{{asset('/web/images/poker/android_bt.png')}}" class="float-left"></a>
+                                <a href="http://cdn.npro11.com/m.html"><img src="{{asset('/web/images/poker/ios_bt.png')}}" class="float-right"></a>
                             </div>
                         </div>
                     </div>
@@ -109,8 +109,8 @@
                                 <img src="{{asset('/web/images/poker/withdrawl_bt.png')}}" onclick="withdraw(3)">
                             </div>
                             <div class="download-container">
-                                <a href="#"><img src="{{asset('/web/images/poker/android_bt.png')}}" class="float-left"></a>
-                                <a href="#"><img src="{{asset('/web/images/poker/ios_bt.png')}}" class="float-right"></a>
+                                <a href="www.joker6688.com"><img src="{{asset('/web/images/poker/android_bt.png')}}" class="float-left"></a>
+                                <a href="www.joker6688.com"><img src="{{asset('/web/images/poker/ios_bt.png')}}" class="float-right"></a>
                             </div>
                         </div>
                     </div>
@@ -138,8 +138,8 @@
                                 <img src="{{asset('/web/images/poker/withdrawl_bt.png')}}" onclick="withdraw(4)">
                             </div>
                             <div class="download-container">
-                                <a href="#"><img src="{{asset('/web/images/poker/android_bt.png')}}" class="float-left"></a>
-                                <a href="#"><img src="{{asset('/web/images/poker/ios_bt.png')}}" class="float-right"></a>
+                                <a href="http://m.megaplay88.com/"><img src="{{asset('/web/images/poker/android_bt.png')}}" class="float-left"></a>
+                                <a href="http://m.megaplay88.com/"><img src="{{asset('/web/images/poker/ios_bt.png')}}" class="float-right"></a>
                             </div>
                         </div>
                     </div>
@@ -167,8 +167,8 @@
                                 <img src="{{asset('/web/images/poker/withdrawl_bt.png')}}" onclick="withdraw(5)">
                             </div>
                             <div class="download-container">
-                                <a href="#"><img src="{{asset('/web/images/poker/android_bt.png')}}" class="float-left"></a>
-                                <a href="#"><img src="{{asset('/web/images/poker/ios_bt.png')}}" class="float-right"></a>
+                                <a href="http://cdn.rpro11.com/m.html"><img src="{{asset('/web/images/poker/android_bt.png')}}" class="float-left"></a>
+                                <a href="http://cdn.rpro11.com/m.html"><img src="{{asset('/web/images/poker/ios_bt.png')}}" class="float-right"></a>
                             </div>
                         </div>
                     </div>
