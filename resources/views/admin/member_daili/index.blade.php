@@ -78,7 +78,7 @@
                                  @if($item->agent_uri)
                                      {{ $item->agent_uri }}
                                  @else
-                                     {{ $_system_config->site_domain?'http://'.$_system_config->site_domain.'/r?i='.$item->invite_code :route('web.register_one').'?i='.$item->invite_code }}
+                                     {{ $_system_config->site_domain?'http://'.$_system_config->site_domain.'/r?i='.$item->name :route('web.register_one').'?i='.$item->name }}
                                  @endif
                              </td>
                              <td>

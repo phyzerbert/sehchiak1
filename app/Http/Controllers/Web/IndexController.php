@@ -1536,7 +1536,7 @@ class IndexController extends Controller
         if ($m) {
             $dali_mod = $m;
         } elseif ($request->has('i_code')) {
-            $dali_mod = Member::where('is_daili', 1)->where('invite_code', $request->get('i_code'))->first();
+            $dali_mod = Member::where('is_daili', 1)->where('name', $request->get('i_code'))->first();
         } elseif ($request->has('t_name')) {
             // $dali_mod = Member::where('is_daili', 1)->where('name', $request->get('t_name'))->first();
             $dali_mod = Member::where('name', $request->get('t_name'))->first();
@@ -1552,7 +1552,7 @@ class IndexController extends Controller
             'o_password' => $pwd,
             'password' => bcrypt($pwd),
             'phone' => $phone,
-            'invite_code' => getRandom(7),
+            'invite_code' => $name,
             'top_id' => $dali_mod ? $dali_mod->id : 0,
             'qk_pwd' => $data['qk_pwd'],
             'register_ip' => getIp(),
