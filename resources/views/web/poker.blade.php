@@ -51,8 +51,8 @@
                             </div>
                             
                             <div class="download-container">
-                                <img src="{{asset('/web/images/poker/android_bt.png')}}">
-                                <img src="{{asset('/web/images/poker/ios_bt.png')}}">
+                                <a href="#"><img src="{{asset('/web/images/poker/android_bt.png')}}" class="float-left"></a>
+                                <a href="#"><img src="{{asset('/web/images/poker/ios_bt.png')}}" class="float-right"></a>
                             </div>
                         </div>
                     </div>
@@ -82,7 +82,6 @@
                             <div class="download-container">
                                 <img src="{{asset('/web/images/poker/android_bt.png')}}">
                                 <img src="{{asset('/web/images/poker/ios_bt.png')}}">
-
                             </div>
                         </div>
                     </div>
