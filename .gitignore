@@ -5,6 +5,7 @@
 /routes
 /vendor
 .env
+yarn.lock
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
