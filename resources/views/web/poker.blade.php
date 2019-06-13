@@ -109,8 +109,8 @@
                                 <img src="{{asset('/web/images/poker/withdrawl_bt.png')}}" onclick="withdraw(3)">
                             </div>
                             <div class="download-container">
-                                <a href="www.joker6688.com"><img src="{{asset('/web/images/poker/android_bt.png')}}" class="float-left"></a>
-                                <a href="www.joker6688.com"><img src="{{asset('/web/images/poker/ios_bt.png')}}" class="float-right"></a>
+                                <a href="http://www.joker6688.com"><img src="{{asset('/web/images/poker/android_bt.png')}}" class="float-left"></a>
+                                <a href="http://www.joker6688.com"><img src="{{asset('/web/images/poker/ios_bt.png')}}" class="float-right"></a>
                             </div>
                         </div>
                     </div>
