@@ -80,8 +80,8 @@
                                 <img src="{{asset('/web/images/poker/withdrawl_bt.png')}}" onclick="withdraw(2)">
                             </div>
                             <div class="download-container">
-                                <img src="{{asset('/web/images/poker/android_bt.png')}}">
-                                <img src="{{asset('/web/images/poker/ios_bt.png')}}">
+                                <a href="#"><img src="{{asset('/web/images/poker/android_bt.png')}}" class="float-left"></a>
+                                <a href="#"><img src="{{asset('/web/images/poker/ios_bt.png')}}" class="float-right"></a>
                             </div>
                         </div>
                     </div>
@@ -109,9 +109,8 @@
                                 <img src="{{asset('/web/images/poker/withdrawl_bt.png')}}" onclick="withdraw(3)">
                             </div>
                             <div class="download-container">
-                                <img src="{{asset('/web/images/poker/android_bt.png')}}">
-                                <img src="{{asset('/web/images/poker/ios_bt.png')}}">
-
+                                <a href="#"><img src="{{asset('/web/images/poker/android_bt.png')}}" class="float-left"></a>
+                                <a href="#"><img src="{{asset('/web/images/poker/ios_bt.png')}}" class="float-right"></a>
                             </div>
                         </div>
                     </div>
@@ -139,9 +138,8 @@
                                 <img src="{{asset('/web/images/poker/withdrawl_bt.png')}}" onclick="withdraw(4)">
                             </div>
                             <div class="download-container">
-                                <img src="{{asset('/web/images/poker/android_bt.png')}}">
-                                <img src="{{asset('/web/images/poker/ios_bt.png')}}">
-
+                                <a href="#"><img src="{{asset('/web/images/poker/android_bt.png')}}" class="float-left"></a>
+                                <a href="#"><img src="{{asset('/web/images/poker/ios_bt.png')}}" class="float-right"></a>
                             </div>
                         </div>
                     </div>
@@ -169,8 +167,8 @@
                                 <img src="{{asset('/web/images/poker/withdrawl_bt.png')}}" onclick="withdraw(5)">
                             </div>
                             <div class="download-container">
-                                <img src="{{asset('/web/images/poker/android_bt.png')}}">
-                                <img src="{{asset('/web/images/poker/ios_bt.png')}}">
+                                <a href="#"><img src="{{asset('/web/images/poker/android_bt.png')}}" class="float-left"></a>
+                                <a href="#"><img src="{{asset('/web/images/poker/ios_bt.png')}}" class="float-right"></a>
                             </div>
                         </div>
                     </div>
@@ -198,8 +196,8 @@
                                 <img src="{{asset('/web/images/poker/withdrawl_bt.png')}}" onclick="withdraw(6)">
                             </div>
                             <div class="download-container">
-                                <img src="{{asset('/web/images/poker/android_bt.png')}}">
-                                <img src="{{asset('/web/images/poker/ios_bt.png')}}">
+                                <a href="#"><img src="{{asset('/web/images/poker/android_bt.png')}}" class="float-left"></a>
+                                <a href="#"><img src="{{asset('/web/images/poker/ios_bt.png')}}" class="float-right"></a>
                             </div>
                         </div>
                     </div>
