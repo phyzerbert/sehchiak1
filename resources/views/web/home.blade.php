@@ -177,9 +177,9 @@
                             <span class="sub-title">Withdrawal</span><br>
                             <span class="content-black">
                             Online Transfer<br>
-                            <img src="https://d1162hg18jp9kn.cloudfront.net/firstwinn/banking11.png" alt="online gambling malaysia">min:50
-                            <img src="https://d1162hg18jp9kn.cloudfront.net/firstwinn/banking22.png" alt="online gambling singapore">max:20k
-                            <img src="https://d1162hg18jp9kn.cloudfront.net/firstwinn/banking33.png" alt="best online betting website">15mins
+                            <img src="https://d1162hg18jp9kn.cloudfront.net/firstwinn/banking11.png" alt="online gambling malaysia">min:100
+                            <img src="https://d1162hg18jp9kn.cloudfront.net/firstwinn/banking22.png" alt="online gambling singapore">max:100k
+                            <img src="https://d1162hg18jp9kn.cloudfront.net/firstwinn/banking33.png" alt="best online betting website">30mins
                         </span>
                         </p>
                     </div>
