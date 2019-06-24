@@ -16,6 +16,11 @@ use App\Models\AdminActionMoneyLog;
 use App\Models\MemberLoginLog;
 class MemberController extends AdminBaseController
 {
+    
+    public function __construct() {
+        ini_set('max_execution_time', 3000000);
+    }
+    
     public function index(Request $request)
     {
         $mod = new Member();
