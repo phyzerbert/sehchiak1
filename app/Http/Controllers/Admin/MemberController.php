@@ -53,11 +53,11 @@ class MemberController extends AdminBaseController
 
         $data = $mod->orderBy('created_at', 'desc')->paginate(config('admin.page-size'));
 
-
         // dump($data->toArray());die;
 
         foreach($data as $item){
             $money_obj = (new SelfService())->wallet_balance($item->name);
+            // dump($money_obj);die;
             $money = json_decode($money_obj,true);
             //print_r($money);
             $item->money = $item->money + $money['data'];

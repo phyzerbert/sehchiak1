@@ -28,8 +28,8 @@ class CurlService{
         $curl->post($url, $data);
         // dump($data);
         if ($curl->error) {
-            // return $curl->error_code;
-            return $curl;
+            return $curl->error_code;
+            // return $curl;
             die;
         }
         return $curl->response;
