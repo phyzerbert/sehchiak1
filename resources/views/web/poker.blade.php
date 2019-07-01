@@ -379,7 +379,7 @@
                 if (api_id == 7) {
                     web918_setscore(score, "withdraw");
                 } else {
-                    setscore(api_id,score,0);
+                    setscore(api_id,score,1);
                 }
             });
 
