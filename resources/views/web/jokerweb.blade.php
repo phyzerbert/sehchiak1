@@ -90,11 +90,10 @@
                             alert("Sorry, Unfortunately cannot play game.");
                             return false;
                         }
-                        
+                        $('#ajax-loading').hide();
                         $("#main-buttons").hide();
                         $("#gamesite").show();
                         $("#iFrameGame").attr('src', response);
-                        $('#ajax-loading').hide();
                     },
                     error: function (xhr, status) {
                         // alert(status);
@@ -114,6 +113,7 @@
                     alert("You don\'t have enough money!");
                     return false;
                 }
+                $('#ajax-loading').show();
                 $.ajax({
                     url: "/jokerweb/setbalance",
                     type: "POST",
@@ -125,9 +125,11 @@
                         }else{
                             alert("Unfortunately failed!");
                         }
+                        $('#ajax-loading').hide();
                     },
                     error: function (xhr, status) {
                         alert("Unfortunately failed!");
+                        $('#ajax-loading').hide();
                     }
                 }); 
                 
@@ -140,7 +142,7 @@
                 let amount = prompt('Do you want to Withdraw? Please type the correct Score!', '0');               
                 if (amount === null) {
                     return false;
-                }
+                }$('#ajax-loading').show();
                 $.ajax({
                     url: "/jokerweb/setbalance",
                     type: "POST",
@@ -151,10 +153,12 @@
                             window.location.reload(true);
                         }else{
                             alert("Unfortunately failed!");
-                        }                        
+                        }
+                        $('#ajax-loading').hide();
                     },
                     error: function (xhr, status) {
                         alert("Unfortunately failed!");
+                        $('#ajax-loading').hide();
                     }
                 }); 
             });
