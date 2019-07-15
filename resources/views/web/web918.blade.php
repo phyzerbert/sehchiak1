@@ -87,6 +87,7 @@
                     alert("You don\'t have enough money!");
                     return false;
                 }
+                $('#ajax-loading').show();
                 $.ajax({
                     url: "/web918/setbalance",
                     type: "POST",
@@ -97,10 +98,12 @@
                             window.location.reload(true);
                         }else{
                             alert("Unfortunately failed!");
+                            $('#ajax-loading').hide();
                         }
                     },
                     error: function (xhr, status) {
                         alert("Unfortunately failed!");
+                        $('#ajax-loading').hide();
                     }
                 }); 
                 
@@ -114,6 +117,7 @@
                 if (amount === null) {
                     return false;
                 }
+                $('#ajax-loading').show();
                 $.ajax({
                     url: "/web918/setbalance",
                     type: "POST",
@@ -124,10 +128,12 @@
                             window.location.reload(true);
                         }else{
                             alert("Unfortunately failed!");
+                            $('#ajax-loading').hide();
                         }                        
                     },
                     error: function (xhr, status) {
                         alert("Unfortunately failed!");
+                        $('#ajax-loading').hide();
                     }
                 }); 
             });

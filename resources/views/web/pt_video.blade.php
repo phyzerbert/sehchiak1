@@ -117,6 +117,7 @@
                     alert("You don\'t have enough money!");
                     return false;
                 }
+                $('#ajax-loading').show();
                 $.ajax({
                     url: "{{route('pt_video.deposit')}}",
                     type: "POST",
@@ -128,9 +129,11 @@
                         }else{
                             alert("Unfortunately failed!");
                         }
+                        $('#ajax-loading').hide();
                     },
                     error: function (xhr, status) {
                         alert("Unfortunately failed!");
+                        $('#ajax-loading').hide();
                     }
                 }); 
                 
@@ -145,6 +148,7 @@
                 if (amount === null) {
                     return false;
                 }
+                $('#ajax-loading').show();
                 $.ajax({
                     url: "{{route('pt_video.withdraw')}}",
                     type: "POST",
@@ -155,10 +159,12 @@
                             window.location.reload(true);
                         }else{
                             alert("Unfortunately failed!");
-                        }                        
+                        }
+                        $('#ajax-loading').hide();                
                     },
                     error: function (xhr, status) {
                         alert("Unfortunately failed!");
+                        $('#ajax-loading').hide();
                     }
                 }); 
             });

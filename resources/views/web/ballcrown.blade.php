@@ -112,6 +112,8 @@
                         $('#ajax-loading').hide();
                     },
                     error: function (xhr, status) {
+                        alert('Sorry, Something went wrong.');
+                        $('#ajax-loading').hide();
                         // alert(status);
                         // window.location.href="https://vboss88.com/vboss/bet/show";
                     }
@@ -130,6 +132,7 @@
                     alert("You don\'t have enough money!");
                     return false;
                 }
+                $('#ajax-loading').show();
                 $.ajax({
                     url: "/ballcrown/setbalance",
                     type: "POST",
@@ -141,9 +144,11 @@
                         }else{
                             alert("Unfortunately failed!");
                         }
+                        $('#ajax-loading').hide();
                     },
                     error: function (xhr, status) {
                         alert("Unfortunately failed!");
+                        $('#ajax-loading').hide();
                     }
                 }); 
                 
@@ -157,6 +162,7 @@
                 if (amount === null) {
                     return false;
                 }
+                $('#ajax-loading').show();
                 $.ajax({
                     url: "/ballcrown/setbalance",
                     type: "POST",
@@ -167,10 +173,12 @@
                             window.location.reload(true);
                         }else{
                             alert("Unfortunately failed!");
-                        }                        
+                        }
+                        $('#ajax-loading').hide();                     
                     },
                     error: function (xhr, status) {
                         alert("Unfortunately failed!");
+                        $('#ajax-loading').hide();
                     }
                 }); 
             });
